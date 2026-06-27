@@ -5,4 +5,5 @@ zone   = var.zone
 
 module "google_compute_instance"{
 source = "./vm"
+machine_type = var.machine_type
 }
