@@ -1,6 +1,7 @@
 provider "google" {
   project     = "project-2e8daeec-e207-40dd-870"
   region      = var.region
+  zone        = var.zone
 }
 
 resource "google_compute_instance" "my-tfinstance2" {
@@ -32,6 +33,5 @@ resource "google_compute_instance" "my-tfinstance2" {
   }
 }
 variable "region"{}
-variable "machine_type" {
-  
-}
+variable "machine_type" {}
+variable "zone"{}
